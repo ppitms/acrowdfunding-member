@@ -21,6 +21,7 @@ public class MemberProviderHandler {
     @Autowired
     private MemberService memberService;
 
+    //添加
     @RequestMapping("/save/member/remote")
     public ResultEntity<String> saveMember(@RequestBody MemberPO memberPO){
         try {

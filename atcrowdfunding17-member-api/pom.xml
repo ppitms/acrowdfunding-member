@@ -12,7 +12,6 @@
     <artifactId>atcrowdfunding17-member-api</artifactId>
     <dependencies>
 
-
         <!--openfeign-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
