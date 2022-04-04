@@ -1,0 +1,12 @@
+server:
+  port: 3000
+spring:
+  redis:
+    password: 'qazwsx123'
+    host: 192.168.177.129
+  application:
+    name: zhijia-crowd-redis
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka

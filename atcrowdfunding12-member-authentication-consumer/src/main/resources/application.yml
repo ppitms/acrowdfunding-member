@@ -1,0 +1,32 @@
+server:
+  port: 4000
+spring:
+  application:
+    name: zhijia-crowd-auth
+  thymeleaf:                      #可以省略
+    prefix: classpath:/templates/
+    suffix: .html
+
+  redis:
+    host: 192.168.177.129
+    password: qazwsx123
+  session:
+    store-type: redis
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+#  instance:
+#    prefer-ip-address: true
+
+short:
+  message:
+    app-code: b81a499b1f46480fa077f146f4ea43c9
+    host: https://dfsns.market.alicloudapi.com
+    method: POST
+    path: /data/send_sms
+    sign: null
+    skin: TPL_0000
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
